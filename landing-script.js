@@ -35,3 +35,16 @@ if (tickerTrack) {
   // Duplicate ticker for infinite loop
   tickerTrack.innerHTML += tickerTrack.innerHTML;
 }
+
+// Track InitiateCheckout on checkout buttons click
+document.querySelectorAll('a[href*="pay.wiapy.com"]').forEach((button) => {
+  button.addEventListener("click", () => {
+    if (typeof fbq === "function") {
+      fbq("track", "InitiateCheckout", {
+        content_name: "Devocional 31 Dias com Nossa Senhora",
+        value: 14.90,
+        currency: "BRL"
+      });
+    }
+  });
+});
