@@ -6,10 +6,18 @@
   <title>Devocional 31 Dias com Nossa Senhora</title>
   <meta name="description" content="Encontre a paz e aprofunde sua fé dedicando poucos minutos por dia na presença de Deus e Nossa Senhora." />
 
+  <!-- Preload Critical LCP Image -->
+  <link rel="preload" as="image" href="topo.webp" type="image/webp" fetchpriority="high" />
+
+  <!-- Non-blocking Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700&family=Inter:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700&family=Inter:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700&family=Inter:wght@400;500;600;700&display=swap" />
+  </noscript>
+
   <link rel="stylesheet" href="landing-style.css" />
 
   <!-- Meta Pixel Code -->
@@ -72,7 +80,7 @@
         </div>
 
         <div class="hero__media">
-          <img src="Topo.png" alt="Devocional 31 Dias Nossa Senhora" />
+          <img src="topo.webp" alt="Devocional 31 Dias Nossa Senhora" width="1200" height="675" fetchpriority="high" decoding="async" />
         </div>
       </div>
     </section>
@@ -94,11 +102,11 @@
           <h2>Veja como é o devocional por dentro</h2>
         </div>
         <div class="book-gallery">
-          <img src="1.png" alt="Página Interna">
-          <img src="9.png" alt="Página Interna">
-          <img src="25.png" alt="Página Interna">
-          <img src="28.png" alt="Página Interna">
-          <img src="cover.png" alt="Página Interna">
+          <img src="page-1.webp" alt="Página Interna do Devocional" width="750" height="1059" loading="lazy" decoding="async" />
+          <img src="page-9.webp" alt="Página Interna do Devocional" width="750" height="1059" loading="lazy" decoding="async" />
+          <img src="page-25.webp" alt="Página Interna do Devocional" width="750" height="1059" loading="lazy" decoding="async" />
+          <img src="page-28.webp" alt="Página Interna do Devocional" width="750" height="1059" loading="lazy" decoding="async" />
+          <img src="cover.webp" alt="Capa do Devocional" width="750" height="750" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -110,9 +118,9 @@
           <h2>Veja o que estão dizendo sobre o devocional.</h2>
         </div>
         <div class="testimonials-carousel">
-          <img class="testimonial-img" src="Imagem do ChatGPT 13 de out. de 2026, 17_12_27.png" alt="Depoimento de cliente satisfeita" />
-          <img class="testimonial-img" src="Imagem do ChatGPT 13 de out. de 2026, 17_12_31.png" alt="Depoimento de cliente satisfeita" />
-          <img class="testimonial-img" src="Imagem do ChatGPT 13 de out. de 2026, 17_13_08.png" alt="Depoimento de cliente satisfeita" />
+          <img class="testimonial-img" src="depoimento-1.webp" alt="Depoimento de cliente satisfeita" width="750" height="909" loading="lazy" decoding="async" />
+          <img class="testimonial-img" src="depoimento-2.webp" alt="Depoimento de cliente satisfeita" width="750" height="909" loading="lazy" decoding="async" />
+          <img class="testimonial-img" src="depoimento-3.webp" alt="Depoimento de cliente satisfeita" width="750" height="909" loading="lazy" decoding="async" />
         </div>
       </div>
     </section>
@@ -153,17 +161,23 @@
 
         <div class="features">
           <article class="feature-card">
-            <span class="icon"><i class="fa-solid fa-book-open"></i></span>
+            <span class="icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+            </span>
             <h3>Leituras Profundas</h3>
             <p>31 devocionais diários com passagens bíblicas selecionadas e meditações inspiradas em Nossa Senhora.</p>
           </article>
           <article class="feature-card">
-            <span class="icon"><i class="fa-solid fa-link"></i></span>
+            <span class="icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
+            </span>
             <h3>Momento do Rosário</h3>
             <p>Reflexões específicas para cada dia que acompanham a oração do Rosário, tornando a prática muito mais conectada.</p>
           </article>
           <article class="feature-card">
-            <span class="icon"><i class="fa-solid fa-mobile-screen"></i></span>
+            <span class="icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg>
+            </span>
             <h3>Feito para Telas</h3>
             <p>Esqueça os PDFs pequenos e difíceis de ler. Nosso material é diagramado e otimizado para celulares e tablets.</p>
           </article>
@@ -228,7 +242,7 @@
 
     <section class="section" style="background: var(--cream);">
       <div class="container showcase">
-        <img src="9.png" alt="Páginas internas do Devocional" style="border-radius:12px;box-shadow:var(--shadow)" />
+        <img src="page-9.webp" alt="Páginas internas do Devocional" width="750" height="1059" loading="lazy" decoding="async" style="border-radius:12px;box-shadow:var(--shadow)" />
         <div class="showcase__copy">
           <h2 style="font-size: 40px; margin-bottom: 20px;">Design Premium para Celular</h2>
           <p>
@@ -271,7 +285,10 @@
             <strong>R$ 14,90</strong>
           </div>
           <a class="button button--primary button--full" href="https://pay.wiapy.com/ULpGHKhyl9xX" style="font-size: clamp(13px, 4vw, 18px); height: 60px; white-space: nowrap;">QUERO GARANTIR MEU DEVOCIONAL</a>
-          <p class="secure"><i class="fa-solid fa-lock" style="margin-right: 8px;"></i>Pagamento seguro · Acesso Imediato · Único pagamento</p>
+          <p class="secure">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            Pagamento seguro · Acesso Imediato · Único pagamento
+          </p>
         </div>
       </div>
     </section>
@@ -323,6 +340,6 @@
     </div>
   </footer>
 
-  <script src="landing-script.js"></script>
+  <script src="landing-script.js" defer></script>
 </body>
 </html>

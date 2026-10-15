@@ -1,6 +1,6 @@
 .DS_Store
 *.pdf
+*.png
 book_generator.html
 app.js
-logo.png
 logo.svg
